@@ -6,5 +6,5 @@
 
 <h2>I'm using:<h2>
 
-styles: SCSS 
+SCSS and HTML
 

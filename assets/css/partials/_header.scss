@@ -1,15 +1,9 @@
 //
 
 .header {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 24px 0;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 
   &__logo {
     font-family: "Be Vietnam Pro", sans-serif;
@@ -39,6 +33,28 @@
         &:last-child {
           margin-right: 0;
         }
+
+        a {
+          transition: 0.5s ease;
+
+          &:hover {
+            color: $secundary-color;
+            font-size: 27px;
+            transition: all 300ms;
+            font-size-adjust: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    .icon-sun {
+      &::before {
+        font-family: "icomoon";
+        content: "\e936";
+        font-size: 32px;
+        color: $complementary-color;
       }
     }
   }

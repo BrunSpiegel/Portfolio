@@ -7,8 +7,9 @@
   font-family: "Raleway", sans-serif;
 }
 
-@import 'partials/colors';
-
+@import "partials/colors";
+@import "partials/buttons";
+@import "partials/typography";
 
 body {
   width: 100%;
@@ -16,13 +17,19 @@ body {
 }
 
 $container-xl: 1440px;
-$container-l: 1140px;
+$container-l: 1280px;
 $container-m: 960px;
 $container-s: 540px;
 
+.container {
+  width: 100%;
+  max-width: $container-l;
+  margin: 0 auto;
+  padding: 24px 0;
+}
 
 img,
-svg{
+svg {
   display: block;
   width: 100%;
 }
@@ -33,10 +40,10 @@ a {
 }
 
 li {
-  list-style-type: none
+  list-style-type: none;
 }
 
-@import 'partials/layout';
-@import 'partials/buttons';
-@import 'partials/header';
-@import 'partials/footer';
+@import "partials/layout";
+@import "partials/buttons";
+@import "partials/header";
+@import "partials/footer";

@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rsg8ds');
+  src:  url('fonts/icomoon.eot?rsg8ds#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rsg8ds') format('truetype'),
+    url('fonts/icomoon.woff?rsg8ds') format('woff'),
+    url('fonts/icomoon.svg?rsg8ds#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-airplay:before {
+  content: "\e900";
+}
+.icon-alert-triangle:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-arrow-up:before {
+  content: "\e903";
+}
+.icon-arrow-up-right:before {
+  content: "\e904";
+}
+.icon-at-sign:before {
+  content: "\e905";
+}
+.icon-bell:before {
+  content: "\e906";
+}
+.icon-box:before {
+  content: "\e907";
+}
+.icon-camera:before {
+  content: "\e908";
+}
+.icon-check:before {
+  content: "\e909";
+}
+.icon-chevron-down:before {
+  content: "\e90a";
+}
+.icon-circle:before {
+  content: "\e90b";
+}
+.icon-clock:before {
+  content: "\e90c";
+}
+.icon-code:before {
+  content: "\e90d";
+}
+.icon-codepen:before {
+  content: "\e90e";
+}
+.icon-compass:before {
+  content: "\e90f";
+}
+.icon-copy:before {
+  content: "\e910";
+}
+.icon-cpu:before {
+  content: "\e911";
+}
+.icon-database:before {
+  content: "\e912";
+}
+.icon-dollar-sign:before {
+  content: "\e913";
+}
+.icon-droplet:before {
+  content: "\e914";
+}
+.icon-eye:before {
+  content: "\e915";
+}
+.icon-facebook:before {
+  content: "\e916";
+}
+.icon-figma:before {
+  content: "\e917";
+}
+.icon-gift:before {
+  content: "\e918";
+}
+.icon-git-branch:before {
+  content: "\e919";
+}
+.icon-git-commit:before {
+  content: "\e91a";
+}
+.icon-github:before {
+  content: "\e91b";
+}
+.icon-GithubLogo:before {
+  content: "\e91c";
+}
+.icon-gitlab:before {
+  content: "\e91d";
+}
+.icon-git-merge:before {
+  content: "\e91e";
+}
+.icon-git-pull-request:before {
+  content: "\e91f";
+}
+.icon-globe:before {
+  content: "\e920";
+}
+.icon-grid:before {
+  content: "\e921";
+}
+.icon-hash:before {
+  content: "\e922";
+}
+.icon-heart:before {
+  content: "\e923";
+}
+.icon-home:before {
+  content: "\e924";
+}
+.icon-instagram:before {
+  content: "\e925";
+}
+.icon-layers:before {
+  content: "\e926";
+}
+.icon-linkedin:before {
+  content: "\e927";
+}
+.icon-lock:before {
+  content: "\e928";
+}
+.icon-map:before {
+  content: "\e929";
+}
+.icon-map-pin:before {
+  content: "\e92a";
+}
+.icon-mic:before {
+  content: "\e92b";
+}
+.icon-monitor:before {
+  content: "\e92c";
+}
+.icon-moon:before {
+  content: "\e92d";
+}
+.icon-pen-tool:before {
+  content: "\e92e";
+}
+.icon-search:before {
+  content: "\e92f";
+}
+.icon-send:before {
+  content: "\e930";
+}
+.icon-settings:before {
+  content: "\e931";
+}
+.icon-share-2:before {
+  content: "\e932";
+}
+.icon-shield:before {
+  content: "\e933";
+}
+.icon-shopping-cart:before {
+  content: "\e934";
+}
+.icon-star:before {
+  content: "\e935";
+}
+.icon-sun:before {
+  content: "\e936";
+}
+.icon-thumbs-up:before {
+  content: "\e937";
+}
+.icon-twitter:before {
+  content: "\e938";
+}
+.icon-user:before {
+  content: "\e939";
+}
+.icon-x:before {
+  content: "\e93a";
+}
+.icon-zap:before {
+  content: "\e93b";
+}

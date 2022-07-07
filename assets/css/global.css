@@ -115,7 +115,7 @@ li {
   font-family: "Be Vietnam Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 100%;
   color: #232F34;
 }
@@ -130,7 +130,7 @@ li {
   margin-right: 24px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.125rem;
   line-height: 120%;
 }
 .header__nav--menu--link:last-child {
@@ -145,9 +145,16 @@ li {
   transition: all 300ms;
   font-size-adjust: 20px;
 }
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
 .header__wrapper .icon-sun::before {
+  display: inline-block;
   font-family: "icomoon";
   content: "\e936";
-  font-size: 32px;
-  color: #4A6572;
+  font-size: 24px;
+  color: #F9AA33;
+  font-style: normal;
+  margin-left: 8px;
 }/*# sourceMappingURL=global.css.map */

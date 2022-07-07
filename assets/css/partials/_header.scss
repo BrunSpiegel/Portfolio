@@ -9,7 +9,7 @@
     font-family: "Be Vietnam Pro", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: calculator-rem(40);
     line-height: 100%;
     color: $tertiary-color;
 
@@ -27,7 +27,7 @@
         margin-right: 24px;
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
+        font-size: calculator-rem(18);
         line-height: 120%;
 
         &:last-child {
@@ -49,13 +49,13 @@
   }
 
   &__wrapper {
+    display: flex;
+    align-items: center;
+
     .icon-sun {
-      &::before {
-        font-family: "icomoon";
-        content: "\e936";
-        font-size: 32px;
-        color: $complementary-color;
-      }
+      @include after-icon("\e936", 24px, $secundary-color) {
+        margin-left: 8px;
+      } 
     }
   }
 }

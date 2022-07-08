@@ -13,7 +13,7 @@
 }
 
 @mixin after-icon($icon, $size, $color) {
-  &::before {
+  &::after {
     display: inline-block;
     font-family: "icomoon";
     content: $icon;

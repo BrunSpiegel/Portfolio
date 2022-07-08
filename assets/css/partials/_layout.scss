@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: calculator-rem(64);
 
   &__headline {
     width: 48%;
+
     h2 {
       font-style: normal;
       font-weight: 700;
@@ -12,12 +14,25 @@
       line-height: 120%;
       color: $black-light;
     }
-    img {
-      width: 32px;
-    }
-  }
 
-  &__image {
-    width: 48%;
+    p {
+      margin-top: calculator-rem(48);
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+
+      color: #444444;
+
+      img {
+        display: inline-block;
+        max-width: 32px;
+      }
+    }
+
+    &--wrapper {
+      margin-top: calculator-rem(48);
+      display: flex;
+    }
   }
 }

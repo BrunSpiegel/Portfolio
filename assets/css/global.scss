@@ -18,7 +18,7 @@ body {
 }
 
 $container-xl: 1440px;
-$container-l: 1280px;
+$container-l: 1220px;
 $container-m: 960px;
 $container-s: 540px;
 
@@ -27,6 +27,12 @@ $container-s: 540px;
   max-width: $container-l;
   margin: 0 auto;
   padding: 24px 0;
+  
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 img,

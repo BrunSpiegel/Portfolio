@@ -24,8 +24,28 @@
   }
 }
 
+$gutter: 24px; //pode ser usado 16px
 
 @function calculator-rem($font-size) {
   $size: math.div($font-size, 16);
   @return $size + rem;
+}
+
+//Grid System
+@function grid($col, $total: 12) {
+  @return ($col / $total) * 100%;
+}
+
+@for $i from 1 through 12 {
+  .grid-#{$i} {
+    width: calc(#{grid($i)} - #{$gutter});
+    margin: math.div($gutter, 2);
+    float: left;
+
+    @media screen and (max-width: 960px) {
+      float: none;
+      width: calc(100% - #{$gutter});
+      margin: math.div($gutter, 2);
+    }
+  }
 }

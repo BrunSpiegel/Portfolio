@@ -1,4 +1,8 @@
-//
+.container.header {
+  &::after {
+    display: none;
+  }
+}
 
 .header {
   display: flex;
@@ -55,7 +59,8 @@
     .icon-sun {
       @include after-icon("\e936", 24px, $secundary-color) {
         margin-left: 32px;
-      } 
+        cursor: pointer;
+      }
     }
   }
 }

@@ -50,7 +50,21 @@ li {
   list-style-type: none;
 }
 
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: calculator-rem(64);
+  line-height: 120%;
+  color: $black-dark;
+}
+
+.section-title-image {
+  display: inline-block;
+  max-width: 32px;
+}
+
 @import "partials/layout";
 @import "partials/buttons";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/animations"

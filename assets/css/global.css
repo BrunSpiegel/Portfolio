@@ -10,11 +10,9 @@
 .grid-1 {
   width: calc(8.3333333333% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-1 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -23,11 +21,9 @@
 .grid-2 {
   width: calc(16.6666666667% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-2 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -36,11 +32,9 @@
 .grid-3 {
   width: calc(25% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-3 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -49,11 +43,9 @@
 .grid-4 {
   width: calc(33.3333333333% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-4 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -62,11 +54,9 @@
 .grid-5 {
   width: calc(41.6666666667% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-5 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -75,11 +65,9 @@
 .grid-6 {
   width: calc(50% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-6 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -88,11 +76,9 @@
 .grid-7 {
   width: calc(58.3333333333% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-7 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -101,11 +87,9 @@
 .grid-8 {
   width: calc(66.6666666667% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-8 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -114,11 +98,9 @@
 .grid-9 {
   width: calc(75% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-9 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -127,11 +109,9 @@
 .grid-10 {
   width: calc(83.3333333333% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-10 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -140,11 +120,9 @@
 .grid-11 {
   width: calc(91.6666666667% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-11 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -153,11 +131,9 @@
 .grid-12 {
   width: calc(100% - 24px);
   margin: 12px;
-  float: left;
 }
 @media screen and (max-width: 960px) {
   .grid-12 {
-    float: none;
     width: calc(100% - 24px);
     margin: 12px;
   }
@@ -239,10 +215,22 @@ li {
   list-style-type: none;
 }
 
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 120%;
+  color: #0A0909;
+}
+
+.section-title-image {
+  display: inline-block;
+  max-width: 32px;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 4rem;
 }
 .hero__headline h2 {
@@ -252,7 +240,8 @@ li {
   line-height: 120%;
   color: #1C1B1B;
 }
-.hero__headline p {
+.hero__headline h3 {
+  max-width: 500px;
   margin-top: 3rem;
   font-style: normal;
   font-weight: 500;
@@ -260,17 +249,135 @@ li {
   line-height: 120%;
   color: #444444;
 }
-.hero__headline p img {
-  display: inline-block;
-  max-width: 32px;
-}
 .hero__headline--wrapper {
   margin-top: 3rem;
   display: flex;
 }
+.hero__email {
+  display: flex;
+  align-items: center;
+}
+.hero__email a {
+  font-style: normal;
+  font-weight: 700;
+  font: 1rem;
+  line-height: 19px;
+  color: #4A6572;
+  transition: 0.3s ease;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  position: relative;
+}
+.hero__email a:hover {
+  color: #F9AA33;
+}
+.hero__email a::after {
+  content: url(/assets/images/line-email.png);
+  position: absolute;
+  display: block;
+  left: 16%;
+  bottom: -175px;
+  pointer-events: none;
+}
 
-.experience {
-  margin: 72px auto;
+.arrow-down {
+  display: flex;
+  justify-content: center;
+}
+.arrow-down .icon-arrow-down::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e90a";
+  font-size: 32px;
+  color: #232F34;
+  font-style: normal;
+  margin-left: 32px;
+  cursor: pointer;
+}
+.arrow-down .icon-arrow-down:hover {
+  -webkit-animation: animated-arrow 0.5s ease infinite alternate;
+          animation: animated-arrow 0.5s ease infinite alternate;
+}
+
+.skills-content {
+  margin: 124px auto;
+  max-width: 1220px;
+}
+.skills-content p {
+  width: 60%;
+  font-style: normal;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 120%;
+  margin-top: 32px;
+  color: #2c2c2c;
+}
+.skills-content h3 {
+  margin-top: 72px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #232F34;
+}
+.skills-content__card-content {
+  display: flex;
+}
+.skills-content__card-content--item {
+  background-color: #FBFAFA;
+  padding: 0 38px 24px 38px;
+}
+.skills-content__card-content--item--wrapper {
+  width: 61px;
+  height: 84px;
+  background-color: #344955;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-content__card-content--item--wrapper .icon-figma::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e917";
+  font-size: 32px;
+  color: #F9AA33;
+  font-style: normal;
+  cursor: pointer;
+}
+.skills-content__card-content--item--wrapper .icon-code::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e90d";
+  font-size: 32px;
+  color: #F9AA33;
+  font-style: normal;
+  cursor: pointer;
+}
+.skills-content__card-content--item--wrapper .icon-star::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e935";
+  font-size: 32px;
+  color: #F9AA33;
+  font-style: normal;
+  cursor: pointer;
+}
+.skills-content__card-content--item h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #232F34;
+  margin-top: 14px;
+}
+.skills-content__card-content--item p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #444444;
+  width: 309px;
+  margin-top: 14px;
 }
 
 .btn {
@@ -319,6 +426,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 24px 0;
 }
 .header__logo {
   font-family: "Be Vietnam Pro", sans-serif;
@@ -367,4 +475,16 @@ li {
   font-style: normal;
   margin-left: 32px;
   cursor: pointer;
+}
+
+@-webkit-keyframes animated-arrow {
+  to {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes animated-arrow {
+  to {
+    transform: translateY(-6px);
+  }
 }/*# sourceMappingURL=global.css.map */

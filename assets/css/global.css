@@ -228,6 +228,15 @@ li {
   max-width: 32px;
 }
 
+.icon {
+  width: 61px;
+  height: 84px;
+  background-color: #344955;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -302,8 +311,12 @@ li {
 .skills-content {
   margin: 124px auto;
   max-width: 1220px;
+  padding: 0 16px;
 }
-.skills-content p {
+.skills-content--wrapper {
+  padding: 0 16px;
+}
+.skills-content--wrapper p {
   width: 60%;
   font-style: normal;
   font-size: 1.125rem;
@@ -313,7 +326,7 @@ li {
   color: #2c2c2c;
 }
 .skills-content h3 {
-  margin-top: 72px;
+  margin: 72px 0 40px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -328,39 +341,43 @@ li {
   padding: 0 38px 24px 38px;
 }
 .skills-content__card-content--item--wrapper {
-  width: 61px;
-  height: 84px;
-  background-color: #344955;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
-.skills-content__card-content--item--wrapper .icon-figma::after {
+.skills-content__card-content--item--wrapper .figma::after {
   display: inline-block;
   font-family: "icomoon";
   content: "\e917";
   font-size: 32px;
   color: #F9AA33;
   font-style: normal;
-  cursor: pointer;
 }
-.skills-content__card-content--item--wrapper .icon-code::after {
+.skills-content__card-content--item--wrapper .code::after {
   display: inline-block;
   font-family: "icomoon";
   content: "\e90d";
   font-size: 32px;
   color: #F9AA33;
   font-style: normal;
-  cursor: pointer;
 }
-.skills-content__card-content--item--wrapper .icon-star::after {
+.skills-content__card-content--item--wrapper .star::after {
   display: inline-block;
   font-family: "icomoon";
   content: "\e935";
   font-size: 32px;
   color: #F9AA33;
   font-style: normal;
+}
+.skills-content__card-content--item--wrapper .icon-arrow-down::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e902";
+  font-size: 24px;
+  color: #344955;
+  font-style: normal;
   cursor: pointer;
+  font-weight: bold;
+  margin-top: 18px;
 }
 .skills-content__card-content--item h4 {
   font-style: normal;
@@ -378,6 +395,82 @@ li {
   color: #444444;
   width: 309px;
   margin-top: 14px;
+}
+
+.experience-content__card-content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.experience-content__card-content--item {
+  background-color: #FBFAFA;
+  padding: 37px 44px;
+}
+.experience-content__card-content--item--wrapper {
+  position: relative;
+}
+.experience-content__card-content--item--wrapper .experience-circle {
+  width: 29px;
+  height: 29px;
+  background-color: #232F34;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.experience-content__card-content--item--wrapper .experience-icon {
+  position: absolute;
+  top: -48%;
+  left: 3.4%;
+}
+.experience-content__card-content--item--wrapper .monitor::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e92c";
+  font-size: 32px;
+  color: #232F34;
+  font-style: normal;
+}
+.experience-content__card-content--item--wrapper .figma::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e917";
+  font-size: 32px;
+  color: #232F34;
+  font-style: normal;
+  font-weight: bold;
+}
+.experience-content__card-content--item h4 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #232F34;
+  margin-top: 40px;
+}
+.experience-content__card-content--item--agency {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #232F34;
+  margin-top: 16px;
+}
+.experience-content__card-content--item p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #444444;
+  margin-top: 24px;
+}
+.experience-content__card-content--item--date {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #444444;
+  margin-top: 40px;
 }
 
 .btn {

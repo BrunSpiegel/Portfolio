@@ -63,6 +63,16 @@ li {
   max-width: 32px;
 }
 
+.icon {
+  width: 61px;
+  height: 84px;
+  background-color: $primary-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @import "partials/layout";
 @import "partials/buttons";
 @import "partials/header";

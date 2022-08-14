@@ -1,0 +1,87 @@
+.footer {
+  background-color: $tertiary-color;
+
+  &__wrapper {
+    margin: calculator-rem(72) auto;
+    max-width: $container-l;
+    padding: 72px 0;
+  }
+
+  &__left {
+    img {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      border: 4px solid $secundary-color;
+    }
+
+    h4 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: calculator-rem(32);
+      line-height: 120%;
+      color: $gray-800;
+      margin-top: 12px;
+    }
+
+    span {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+      color: $gray-500;
+      margin-top: 12px;
+    }
+
+    p {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+      color: $gray-500;
+      margin-top: calculator-rem(24);
+    }
+
+    &--social {
+      display: flex;
+      align-items: center;
+      gap: calculator-rem(16);
+      margin-top: calculator-rem(30);
+
+      .social-icon {
+        width: 57px;
+        height: 57px;
+        background-color: $primary-color;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px);
+          &:after {
+            color: $secundary-color;
+            transition: 0.5s ease-in-out;
+          }
+        }
+      }
+
+      .instagram {
+        @include after-icon("\e925", 28px, $gray-800);
+      }
+
+      .github {
+        @include after-icon("\e91c", 28px, $gray-800);
+      }
+
+      .twitter {
+        @include after-icon("\e938", 28px, $gray-800);
+      }
+    }
+  }
+}
